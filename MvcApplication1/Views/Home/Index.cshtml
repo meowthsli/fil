@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Enter FIL program";
+}
+
+<h2>Enter (correct) FIL program:</h2>
+<form action="~/Home/Translate">
+    <span>
+        <div>
+            @Html.TextArea("fil", (string)ViewBag.text, new { cols = "80", rows = 20 })
+        </div>
+        </span>
+    <p>
+        <input type="submit" value="Push delicately"/>
+    </p>
+</form>
+
+<p>
+     @ViewBag.python
+</p>
